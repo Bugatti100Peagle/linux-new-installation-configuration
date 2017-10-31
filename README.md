@@ -45,8 +45,9 @@ done
 ##使用
 在终端输入 `./op mk` 这里 `op` 是我编写的这个shell的名字， `mk` 我定义的是打开的马克飞象的连接。因为我有在不同电脑使用软件的需要，所以一些软件还是网页版比较方便。
 如果想一口气打开多个网页或者应用，也是可以的。
-![Alt text](./Screenshot-2017-10-31 2017-10-31 13-23-16屏幕截图 png（PNG 图像，732x438 像素）.png)
-![Alt text](./Screenshot-2017-10-31 2017-10-31 13-13-02屏幕截图 png（PNG 图像，1920x1080 像素）.png)
+
+![Alt text](https://github.com/Bugatti100Peagle/linux-/blob/master/Screenshot-2017-10-31%202017-10-31%2013-23-16%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%20png%EF%BC%88PNG%20%E5%9B%BE%E5%83%8F%EF%BC%8C732x438%20%E5%83%8F%E7%B4%A0%EF%BC%89.png)
+![Alt text](https://github.com/Bugatti100Peagle/linux-/blob/master/Screenshot-2017-10-31%202017-10-31%2013-13-02%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%20png%EF%BC%88PNG%20%E5%9B%BE%E5%83%8F%EF%BC%8C1920x1080%20%E5%83%8F%E7%B4%A0%EF%BC%89.png)
 
 一口气打开也是相当顺溜的。
 
@@ -57,7 +58,8 @@ done
 
 `alias op='./op'`
 - let' have a try
--  ![Alt text](./2017-10-31 14-10-02屏幕截图2.png)
+
+-  ![Alt text](https://github.com/Bugatti100Peagle/linux-/blob/master/2017-10-31%2014-10-02%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2.png)
 
 
 
