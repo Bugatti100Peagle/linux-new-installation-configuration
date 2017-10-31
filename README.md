@@ -57,7 +57,7 @@ done
 `$vi ~/.bashrc`
 - 在最后一行加入
 
-`alias op='./op'`
+`alias op='/home/你的文件夹名/op'` 
 - let' have a try
 
 -  ![Alt text](https://github.com/Bugatti100Peagle/linux-/blob/master/2017-10-31%2014-10-02%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2.png)
