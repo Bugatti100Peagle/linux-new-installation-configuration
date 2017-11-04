@@ -3,7 +3,7 @@
 >*引言介绍* 之前当我还在用 Windows 的时候，偶然看到一篇黑马公社讲的[这才是极客玩电脑的方式，个性化命令实现快速打开QQ｜黑马三分钟](https://mp.weixin.qq.com/s/CbtPamDYkHI030ihaE4oFg)，后来发现不仅可以打开应用程序的，把网页地址存成一个`.bat` 文件也可以用来打开固定常用的网页。现在我换了linux之后，打开软件倒是好打开了，直接输入应用名就好，开网页就麻烦了。恩，对linux用户来说没有什么不可以。
 ##做法
 - 新建一个shell
-- 复制下方代码并该做你自己喜欢的网址和其他命令。
+- 复制下方代码并改作你自己喜欢的网址和其他命令。
 ```bash
 #!/bin/bash
 for wangye
@@ -28,9 +28,6 @@ do
             ;;
         gsh)
             firefox http://222.195.136.24/
-            ;;
-        al)
-            firefox https://account.aliyun.com/login/login.htm?oauth_callback=https%3A%2F%2Fhome.console.aliyun.com%2F%3Fspm%3D5176.100238.765261.3.Q0IESk
             ;;
       dd)
             firefox https://im.dingtalk.com/
@@ -62,6 +59,11 @@ done
 
 -  ![Alt text](https://github.com/Bugatti100Peagle/linux-/blob/master/2017-10-31%2014-10-02%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE2.png)
 
+##FAQ
+- 怎么打开终端？
+> ubuntu上的快捷键是`ctrl+alt+T`,所以当你熟练了之后，打开四五个网页只需要按 `5个键+4个自定义名称` ，总耗时，嗯，，网络通畅的话只需2秒。
+- 为什么我输入了四个快捷命令只打开一个标签页。
+> 这个和浏览器的启动有关系，如果没有提前将浏览器打开得话会出现一堆报错，第一个网页虽然可以浏览，但是第二个网页需要第一个网页关闭后才会跳出来（至少火狐上是这样，chrome没用过不知道）;如果提前打开了浏览器，即使只是一个空白页也可以，打开四五个毫无压力。我自己浏览器倒是常开，不影响使用，如果介意可以在脚本的`for`语句前加入`firefox `打开一个空白页。
 
 
 
