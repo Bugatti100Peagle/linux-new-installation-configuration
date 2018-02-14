@@ -1,0 +1,28 @@
+#!/bin/bash
+
+count=`ps -ef | grep "python3 WudaoServer.py" | grep -v "grep" | wc -l`
+ 
+if [ $count == 0 ]; then
+    nohup python3 WudaoServer.py > ./usr/server.log 2>&1 &
+    git pull origin master > ./usr/pull.log 2>&1 &
+fi
+
+python3 WudaoCommand.py $*
+
+
+#*************************************************************************
+#	> File Name: demo.sh
+#	> Author: Bugatti100Peagle 
+#	> Mail: 3443988515@qq.com
+#	> Created Time: 2018年02月13日 星期二 16时41分23秒
+ #************************************************************************/
+#!/bin/bash
+word="$*"
+if [ "$1" == '-s' -o "$1" == '-h' -o "$1" == '-k' -o "$1" == '-n' -o "$1" == '-o' ];then
+#if [ x$1 != x ];then
+    word=${word:3}
+else
+    word="$*"
+fi
+espeak "$word"
+
