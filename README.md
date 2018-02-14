@@ -16,6 +16,7 @@
 
 1. VIM 配置
    [超强vim配置文件](https://github.com/ma6174/vim-deprecated),照说明安装，然后对.vimrc文件作一下修改，或者直接复制仓库文件夹下的`vimbk`文件。我因为需要写fortran 程序所以也加入了识别f90的语句。我还加入了状态增强和批量注释的插件的插件。
+
    [vim插件: nerdcommenter[快速注释]](http://www.wklken.me/posts/2015/06/07/vim-plugin-nerdcommenter.html) 
 
    [vim插件: airline[状态栏增强] ](http://www.wklken.me/posts/2015/06/07/vim-plugin-airline.html) 
