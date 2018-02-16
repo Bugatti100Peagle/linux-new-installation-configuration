@@ -16,8 +16,16 @@
 
 1. VIM 配置
    [超强vim配置文件](https://github.com/ma6174/vim-deprecated),照说明安装，然后对.vimrc文件作一下修改，或者直接复制仓库文件夹下的`vimbk`文件。我因为需要写fortran 程序所以也加入了识别f90的语句。我还加入了状态增强和批量注释的插件的插件。
+   批量注释
 
-   [vim插件: nerdcommenter[快速注释]](http://www.wklken.me/posts/2015/06/07/vim-plugin-nerdcommenter.html) 
+   1. control+V进入VISUAL BLOCK模式，按j或k选中多行
+
+   2. 按shift+i（大写I），输入注释符（#或//），按一下或者两下Esc，完成注释
+
+   批量反注释
+
+   1. control+V进入VISUAL  BLOCK模式，按j或k选中多行，按l选中多列
+   2. 按x或者d删除注释。
 
    [vim插件: airline[状态栏增强] ](http://www.wklken.me/posts/2015/06/07/vim-plugin-airline.html) 
 
@@ -29,13 +37,36 @@
    使用自带的输入法就好，虽然搜狗输入法功能丰富，但是在Ubuntu16.04 环境下经常出错异常，不如卸载啦干净。如果你实在喜欢搜狗拼音的话，可以参考[ubuntu安装配置搜狗拼音输入法](https://jingyan.baidu.com/article/a3aad71aa1abe7b1fa009641.html)安装，当你觉得它烦了的时候可以参考[ubuntu彻底卸载搜狗拼音输入法](https://jingyan.baidu.com/article/9faa723154c3dc473d28cb41.html) 
 
 4. 字典词典
-   [无道词典](https://github.com/ChestnutHeng/Wudao-dict) 命令行模式的词典，推荐与espeak联合使用。下载安装后，替换文件夹下的`wdd`文件为仓库中`wudao-dict`文件夹下的`wdd`文件,为了方便自己复习之前查询的单词我还写了一个脚本`wd_words_list.sh`用于发送单词本到制定邮箱, 默认发送最近两次时间戳内的单词，`-a` 选项发送所有单词，有道单词支持导入`.txt`格式的词单文件，背单词从此so easy ! 需要提前配置sendmail
+   [无道词典](https://github.com/ChestnutHeng/Wudao-dict) 命令行模式的词典，推荐与espeak联合使用。下载安装后，替换文件夹下的`wdd`文件为仓库中`wudao-dict`文件夹下的`wdd`文件,为了方便自己复习之前查询的单词我还写了一个脚本`wd_words_list.sh`用于发送单词本到制定邮箱, 默认发送最近两次时间戳内的单词，`-a` 选项发送所有单词，有道单词支持导入`.txt`格式的词单文件，背单词从此so easy ! 需要提前配置sendmail。有时候，邮箱会把邮件错认为垃圾邮件，请到邮件垃圾箱或着被拒邮件中找一找。发送到QQ邮箱会比较慢。
 
-5. sendmail
+   ![邮件效果](./pictures/wds_1.jpg)
+
    ​
 
-4. QQ
-   linux上没法用QQ,webQQ界面丑而且收发消息不及时。推荐使用命令行聊QQ[sjdy521/Mojo-Webqq](https://github.com/sjdy521/Mojo-Webqq)，安装依赖要`sudo` 
+5. mail
+   下载：`sudo apt-get install mailx`,然后关闭sendmail 服务`service sendmail stop ` ,以根用户配置`/etc/mail.rc` 加入
+
+   ``` 
+   set from=用户名@126.com
+   set smtp=smtp.126.com
+   set smtp-auth-user=用户名
+   set smtp-auth-password=客户端授权码，不是邮箱登陆密码
+   set smtp-auth=login
+   ```
+
+   重启服务，发送一封测试邮件。
+
+   `echo "邮件正文" | mail -s "邮件主题" 收件人@qq.com`  
+
+6. QQ
+   linux上没法用QQ,webQQ界面丑而且收发消息不及时。推荐使用命令行聊QQ[sjdy521/Mojo-Webqq](https://github.com/sjdy521/Mojo-Webqq)，安装依赖要`sudo` ,IRC聊天室可以使用`irssi  -c 127.0.0.1 -P 6667` 或者*雷鸟*的聊天功能，设置端口为6667, 禁用SSL. 
+
+   ```
+   保存联系人 直接复制其名称到新建联系人窗口即可
+
+   ```
+
+   ​
 
 7. tmux
 
