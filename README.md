@@ -70,7 +70,7 @@ set smtp-auth=login
 linux上没法用QQ,webQQ界面丑而且收发消息不及时。推荐使用命令行聊QQ[sjdy521/Mojo-Webqq](https://github.com/sjdy521/Mojo-Webqq)，安装依赖要`sudo` ,IRC聊天室可以使用`irssi  -c 127.0.0.1 -P 6667` 或者*雷鸟*的聊天功能，设置端口为6667, 禁用SSL. 
 
 ```
-保存联系人 直接复制其名称到新建联系人窗口即可
+雷鸟：保存联系人 直接复制其名称到新建联系人窗口即可
 ```
 
 ### 7.[tmux分屏利器](./tmux/tmux.md)
@@ -95,4 +95,6 @@ Chrome浏览器不是预装的，而且国内环境限制，火狐更快一点�
 - 印象笔记.剪藏
 
 
+## 11. Sigil Epub阅读器
 
+[Ubuntu下安装ePub编辑器 Sigil](https://www.linuxidc.com/Linux/2012-12/75833.htm) 实际上，它还可以编辑epub文件，如果你Html学得够好的话。
