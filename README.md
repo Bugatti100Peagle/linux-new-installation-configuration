@@ -99,3 +99,5 @@ Chrome浏览器不是预装的，而且国内环境限制，火狐更快一点�
 [Ubuntu下安装ePub编辑器 Sigil](https://www.linuxidc.com/Linux/2012-12/75833.htm) 实际上，它还可以编辑epub文件，如果你Html学得够好的话。
 
 ### 12. [git 搭建服务器，同步目录到网页](./git_service.md) 
+
+### 13. [Apache 设置404页](./apache_404.md)
