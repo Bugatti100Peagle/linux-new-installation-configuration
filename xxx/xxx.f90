@@ -16,12 +16,13 @@
 !# 第一个参数决定第一个词挖不挖 1,2 ，第二个参数是文件
 !# 默认以两倍'__'替换原本的一个字母，方便手写默写和批注。默认跳过标点
 !==> 使用方法，新建目录，在目录下放置好命令文件，howtoxxx.txt
-      ! 第一行 指定 挖奇数，挖偶数,jos
+      ! 第一行 指定 挖奇数，挖偶数,jos,目前只支持保留首单词的格式
       ! 第二行 指定 被挖文件名 目前只支持一个 filename 
       ! 第三行 指定 每个字母替换格式， 如 "__" 以半角双引号封装
       ! xxx_format
       program xxx 
           integer             ::i,j,k,jos
+          character           ::separate_words_new,separate_words_old
           character(len=20)   ::filename,xxx_format
           character(len=50)   ::stay_words,clear_words      !保留或去除的单词
           character(len=300)  ::line
@@ -41,9 +42,16 @@
           read(11,'(a300)'),line
           k=len_trim(line)
           
+          separate_words_old='A'
+          j=1
           do i=1,k
-              stay_words=line(i:i)
-              if()
+              separate_words_new=line(i:i)
+              if(ichar(separate_words_new)<65)then
+                  stay_words=line(j:i-1)
+                  print*,i,j,stay_words
+                  j=i
+             end if
+
           end do
 
 
