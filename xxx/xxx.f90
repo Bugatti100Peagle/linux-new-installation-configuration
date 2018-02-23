@@ -42,6 +42,7 @@
           open(12,File="new_filename.txt")
           do 
           read(11,'(a500)',iostat=line_end),line
+          if(line_end<0)exit
           k=len_trim(line)+1      ! 保证能截取到末尾字符
           j=1
           do i=1,k
@@ -78,7 +79,7 @@
              end if
           end do
           write(12,*) ! 一行一句
-         if(line_end<0)exit
+
           end do
           print*,'完毕，请使用'
           print*,'vi new_filename.txt'
