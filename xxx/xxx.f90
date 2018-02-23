@@ -22,7 +22,7 @@
       ! xxx_format
       program xxx 
           integer             ::i,j,k,jos
-          character           ::separate_words_new,separate_words_old
+          character           ::separate_words_new
           character(len=20)   ::filename,xxx_format
           character(len=50)   ::stay_words,clear_words      !保留或去除的单词
           character(len=300)  ::line
@@ -40,9 +40,8 @@
           open(12,File="new_filename.txt")
           
           read(11,'(a300)'),line
-          k=len_trim(line)
-          
-          separate_words_old='A'
+          k=len_trim(line)+1      ! 保证能截取到末尾字符
+          print*,k
           j=1
           do i=1,k
               separate_words_new=line(i:i)
