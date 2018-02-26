@@ -47,32 +47,24 @@
 
 ![邮件效果](./pictures/wds_1.jpg)
 
+有道出了 youdao-dict for linux ，官网上说支持Ubuntu14 + ，不过我的Ubuntu 16.04 LTS 安装是出现问题，是依赖的问题，后来查资料[Ubuntu 16.04安装有道词典的方法](http://blog.csdn.net/zhuiqiuk/article/details/53645023) ，可以安装一个低版本的，不过使用时仅第一次可以打开，之后就一直闪退。所以，还是乖乖用wudao-dict吧。
 
+### 5. 命令行邮件
 
-### 5. mail
-
-下载：`sudo apt-get install mailx`,然后关闭sendmail 服务`service sendmail stop ` ,以根用户配置`/etc/mail.rc` 加入
-
-``` 
-set from=用户名@126.com
-set smtp=smtp.126.com
-set smtp-auth-user=用户名
-set smtp-auth-password=客户端授权码，不是邮箱登陆密码
-set smtp-auth=login
-```
-
-重启服务，发送一封测试邮件。
-
-`echo "邮件正文" | mail -s "邮件主题" 收件人@qq.com` 
-> ?Centos 服务器下配置十分麻烦
+原本使用的是 mail, 不过配置的时候总是出错，后来换用mutt.安装与配置参考[Ubuntu Mutt邮箱的配置与使用](http://blog.csdn.net/nolan__roronoa/article/details/52335223) 
 
 ### 6. QQ
 
 linux上没法用QQ,webQQ界面丑而且收发消息不及时。推荐使用命令行聊QQ[sjdy521/Mojo-Webqq](https://github.com/sjdy521/Mojo-Webqq)，安装依赖要`sudo` ,IRC聊天室可以使用`irssi  -c 127.0.0.1 -P 6667` 或者*雷鸟*的聊天功能，设置端口为6667, 禁用SSL. 
 
+实际上装好后不长使用，我使用linux时一般都在码代码，很少看聊天，必要的工作通讯是通过邮件的。配置好邮件很重要。
+
 ```
-雷鸟：保存联系人 直接复制其名称到新建联系人窗口即可
+雷鸟：保存联系人 直接复制其名称到新建联系人窗口即可	
 ```
+
+但是每次刷机之后不是要重新装一次邮件？保存的联系人都没了。
+
 
 ### 7.[tmux分屏利器](./tmux/tmux.md)
 
@@ -83,7 +75,7 @@ linux上没法用QQ,webQQ界面丑而且收发消息不及时。推荐使用命�
 
 ### 9. ArcTime 字幕压制软件
 
-因为英语学习的需要，所以需要自己压制一些字幕文件用于复读学习，手机上配合点滴复读机使用，背英语简直不能太享受。
+因为英语学习的需要，所以需要自己压制一些字幕文件用于复读学习，手机上配合点滴复读机使用，背英语简直不能太享受。上[官网下载](http://www.arctime.org/download.html)即可.Ubuntu 16.04 下载前安装 openJDK 和 VLC 
 
 ### 10. 火狐浏览器
 
@@ -104,3 +96,24 @@ Chrome浏览器不是预装的，而且国内环境限制，火狐更快一点�
 
 ### 14. [Fortran 写的背个X啊，使用方法](./xxx/README.md)
 
+### 15. Typora  
+
+原本typora，有官网，比较容易下载的，奈何国内网络的原因（你知道的），多数时间打不开官网。其实安装命令挺简单的，参考[三. Typora：简单高效的 Markdown 编辑器](http://blog.csdn.net/wirelessqa/article/details/70432631) 安装即可。
+
+### 16. 下载加速器 uGet
+
+一开始换到linux后，下载文件只有靠浏览器自带的下载工具，下载速度真心不敢恭维，还老是断线。突然有点想念 windows 上的迅雷。linux也有一个号称“小迅雷”的下载工具，安装配置参考[Linux小迅雷：uGet下载工具加速](http://www.mintos.org/skill/uget-aria2-tweak.html) 
+
+### 17. WPS
+
+**请删除libreoffice !**
+
+**请删除libreoffice !**
+
+**请删除libreoffice !**
+
+然后参考[ubuntu 16.04安装WPS出现系统缺失字体](http://blog.csdn.net/stefansalvatore/article/details/72765659) 安装wps并修复字体缺失的问题。
+
+### 18. virtualbox
+
+虚拟机，即使使用ubuntu也不代表我们只用ubuntu 了，装一个虚拟机，跑一跑其他的linux发行版，或者怀念一下windows上的QQ。
